@@ -4,3 +4,11 @@
     src: url('../fonts/Raleway-VariableFont_wght.woff');
     src: url('../fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype'),url('../fonts/Raleway-VariableFont_wght.ttf');
 }
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+main{
+    flex: 1;
+}
