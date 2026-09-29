@@ -94,3 +94,21 @@ p{
 .Hobbies{
     list-style-type: square;
 }
+Footer{
+    background-color: #17abb3;
+    display: block;
+    justify-items: center;
+    height: 50px;
+    align-content: end;
+    
+}
+.icons{
+    display: flex;
+    gap: 20px;
+}
+.date{
+        font-style: italic;
+        font-size: 0.5rem;
+        color: #ffffff;
+        margin-top: 5px;
+}
