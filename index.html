@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CV de Développeur Web et Web Mobile">
-    <title>CV - Prénom Nom</title>
+    <title>CV - Laury Ragouton</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <div class="corp">
     <header class="cv-header">
         <div class="photo">
-            <img src="./assets/img/pyro.png" alt="Photo de Pyro" class="photo">
+            <a href="./assets/img/pyro.png" target="_blank">
+            <img src="./assets/img/pyro.png" alt="Photo de Laury Ragouton" class="photo">
+            </a>
         </div>
 
         <div class="header-info">
@@ -41,34 +44,171 @@
             </address>
         </div>
     </header>
-    <main>
+    <div class="main">
+        <aside class="aside-general">
+            <section>
+                <h3>Compétences</h3><hr>
+                <div class="comp">
+                <h4>HTML</h4>
+                <!--j'ai préférer utilisé cette méthode pour les étoiles que collé des icones-->
+                <div class="etoile">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                </div>
+                <div class="comp">
+                <h4>CSS</h4>
+                <div class="etoile">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                </div>
+                <div class="comp">
+                <h4>Javascript</h4>
+                <div class="etoile">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                </div>
+                <div class="comp">
+                <h4>PHP</h4>
+                <div class="etoile">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                </div>
+            </section>
+            <section>
+                <h3>Langues</h3><hr>
+                <div class="lang">
+                <h4>Français</h4>
+                <div>Langue maternelle</div>
+                <h4>Anglais</h4>
+                <div>Professionnel</div>
+                <h4>Allemand</h4>
+                <div>Notions</div>
+                </div>
+            </section>
+            <section>
+                <h3>Qualités</h3><hr>
+                <ul class="qualite">
+                    <li>Esprit d'équipe</li>
+                    <li>Autonomie</li>
+                    <li>Organisation</li>
+                    <li>Créativité</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Centres d'intérêt</h3><hr>
+                <ul>
+                    <li>Yoga</li>
+                    <li>Tennis</li>
+                    <li>Ecologie</li>
+                </ul>
+            </section>
+    </aside>
+    <main class="profil">
         <section>
-            <h3>Formations</h3>
-            <span>Titre professionnel DWWM <br>CentreEuropéen de Formation</span>
-            <span>2023/2024</span>
-            <span>Remise a niveau - Métiers du numérique</span>
-            <span>Juin 2023 - Septembre 2023</span>
-            <span>Baccalauréat <br>Lycée de la ville</span>
-            <span>1983</span>
+            <h3>Profil</h3><hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ea in accusantium modi libero vel aliquid dolorem veritatis quo esse facere, illo sequi nam aut, quas, dolores repellat? Dolorem, odio!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et incidunt tempore laudantium ab illo aperiam assumenda non quam a enim earum, neque voluptas eligendi. Possimus earum eligendi magnam quo! Quae!</p>
         </section>
         <section>
-            <h3>Stages</h3>
-            <span>Gestionnaire de paye <br>Société Truc & Machin</span>
-            <span>Mars 2022 - Avril 2022</span>
-            <span>Agent d'accueil <br>Mairie de la ville</span>
-            <span>Janvier 2021 - Février 2021</span>
+            <h3>Formations</h3><hr>
+            <div class="item-cv">
+                <div>
+                    <h4>Titre Professionnel DWWM</h4>
+                    <span class="sub-info">Centre Européen de Formation</span>
+                </div>
+                <span class="date-exp">2023/2024</span>
+            </div>
+            <div class="item-cv">
+                <div>
+                    <h4>Remise à Niveau - Métiers du numérique</h4>
+                    <span class="sub-info">Lycée de la ville</span>
+                </div>
+                <span class="date-exp">Juin 2023 - Septembre 2023</span>
+            </div>
+            <div class="item-cv">
+                <div>
+                    <h4>Baccalauréat</h4>
+                    <span class="sub-info">Lycée de la ville</span>
+                </div>
+                <span class="date-exp">
+                    <time datetime="1983">1983</time>
+                </span>
+            </div>
         </section>
         <section>
-            <h3>Expérience professionnelle</h3>
-            <span>Agent d'accueil <br>Mairie de la ville</span>
-            <span>Mars 2021 - juillet 2021</span>
-            <span>Chauffeur - Livreur <br>Transport Nénès & Fils</span>
-            <span>Septembre 2021 - Décembre 2021</span>
-            <span>Préparateur de commandes</span>
-            <span>Janvier 2000 - Septembre 2000</span>
+            <h3>Stages</h3><hr>
+            <div class="item-cv">
+                <div>
+                    <h4>Gestionnaire de paye</h4>
+                    <span class="sub-info">Société Truc & Machin</span>
+                </div>
+                <span class="date-exp">
+                    <time datetime="2022-03">Mars 2022</time> -
+                    <time datetime="2022-04">Avril 2022</time>
+                </span>
+            </div>
+            <div class="item-cv">
+                <div>
+                    <h4>Agent d'accueil</h4>
+                    <span class="sub-info">Mairie de la ville</span>
+                </div>
+                <span class="date-exp">
+                    <time datetime="2021-01">Janvier 2021</time> -
+                    <time datetime="2021-02">Février 2021</time>
+                </span>
+            </div>
+        </section>
+        <section>
+            <h3>Expérience professionnelle</h3><hr>
+            <div class="item-cv">
+                <div>
+                    <h4>Agent d'accueil</h4>
+                    <span class="sub-info">Mairie de la ville</span>
+                </div>
+                <span class="date-exp">
+                    <time datetime="2021-03">Mars 2021</time> -
+                    <time datetime="2021-07">Juillet 2021</time>
+                </span>
+            </div>
+            <div class="item-cv">
+                <div>
+                    <h4>Chauffeur - Livreur</h4>
+                    <span class="sub-info">Transport Nénès & Fils</span>
+                </div>
+                <span class="date-exp">
+                    <time datetime="2021-09">Septembre 2021</time> -
+                    <time datetime="2021-12">Décembre 2021</time>
+                </span>
+            </div>
+            <div class="item-cv">
+                <div>
+                    <h4>Préparateur de commandes</h4>
+                    <span class="sub-info">Le slip français</span>
+                </div>
+                <span class="date-exp">
+                    <time datetime="2000-01">janvier 2000</time> -
+                    <time datetime="2000-09">septembre 2000</time>
+                </span>
+            </div>
         </section>
     </main>
-    </aside>
+        </div>
         <footer>
             <div class="icons">
                 <i class="fa-brands fa-linkedin"style="color: rgb(255, 255, 255);"></i>
@@ -78,5 +218,6 @@
             <div class="date">Mis à jour le : <time datetime="2026-09-29">29/09/2026</time>
             </div>
     </footer>
+    </div>
 </body>
 </html>
