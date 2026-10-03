@@ -290,6 +290,10 @@ footer {
     cursor: pointer;
 }
 
+.icons a {
+    text-decoration: none;
+}
+
 .date {
     font-style: italic;
     font-size: 0.5rem;
