@@ -1,51 +1,150 @@
+/* 
+    DÉBUT STYLES GÉNÉRAUX & POLICES
+    */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
 @font-face {
     font-family: "Raleway";
-    src: url('../fonts/Raleway-VariableFont_wght.woff');
-    src: url('../fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype'),url('../fonts/Raleway-VariableFont_wght.ttf');
+    src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-body{
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: bold;   
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+/* 
+    appliquer les marges intérieurs et bordures doivent 
+    être comprises dans les largeurs et hauteurs 
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.corp {
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
-    width: 1600px;
-    max-width: 800px;
+    width: 1160px;
     margin: auto;
 }
-main{
-    flex: 1;
+
+div {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
 }
+
+h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(184.11deg 65.18% 43.92%);
+}
+
+h4 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    text-indent: 20px;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+li::marker {
+    color: hsl(183.08deg 77.23% 39.61%);
+}
+/* 
+    FIN STYLES GÉNÉRAUX & POLICES
+    */
+
+
+/*
+    DÉBUT HEADER
+    */
+.cv-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(183.08deg 77.23% 39.61%);
+    color: #fff;
+    padding: 24px 32px;
+    box-sizing: border-box;
+}
+
+.cv-header > .photo {
+    justify-self: center;
+    width: 108px;
+    height: 108px;
+}
+
+.cv-header > .photo img {
+    display: block;
+    width: 108px;
+    height: 108px;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: top;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.photo {
+    margin: 0;
+    margin-right: 100px;
+    
+}
+
+.cv-header .photo img:hover { 
+    cursor: zoom-in; 
+}
+
+.header-info {
+    margin: 0;
+    text-align: center;
+    line-height: 15px;
+}
+
 h1 {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 40px;
 }
+
 h2 {
     font-size: 22px;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
-.header-info {
-    margin: 0;
-    text-align: center;
-    line-height: 15px;
-}
-.cv-header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #17abb3;
-    color: #fff;
-    padding: 24px 32px;
-    box-sizing: border-box;
-}
+
 .hero {
     margin: 0;
     font-style: normal;
     text-align: left;
 }
+
 .hero ul {
     display: grid;
     grid-template-columns: repeat(2, max-content);
@@ -57,58 +156,146 @@ h2 {
     font-size: 14px;
     line-height: 1.2;
 }
+
 .hero li {
     display: flex;
     align-items: center;
     gap: 8px;
 }
+
 .hero li a {
     color: inherit;
     text-decoration: none;
 }
-.cv-header > .photo {
-    justify-self: center;
-    width: 108px;
-    height: 108px;
+/* 
+    FIN HEADER
+    */
+
+
+/* 
+    DÉBUT ASIDE
+    */
+.aside-general {
+    width: 17rem;
+    background-color: hsl(195deg 13.33% 94.12%);
 }
-.cv-header > .photo img {
-    display: block;
-    width: 108px;
-    height: 108px;
-    box-sizing: border-box;
-    object-fit: cover;
-    object-position: top;
-    border: 4px solid #fff;
-    border-radius: 50%;
-}
-.photo{
-    margin: 0;
-    margin-right: 100px;
-}
-p{
-    text-indent: 20px;
-    font-family: "Raleway", serif;
-    margin: 0;
-    line-height: 1.4;
-}
-.Hobbies{
-    list-style-type: square;
-}
-Footer{
-    background-color: #17abb3;
-    display: block;
-    justify-items: center;
-    height: 50px;
-    align-content: end;
-    
-}
-.icons{
+
+.comp {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.comp h4 {
+    margin: 0;
+}
+
+.etoile {
+    color: hsl(183.08deg 77.23% 39.61%);
+}
+
+.lang {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.lang h4 {
+    margin: 0;
+}
+/* 
+    FIN ASIDE
+    */
+
+
+/* 
+    DÉBUT MAIN
+    */
+.main {
+    display: flex;
+    flex-direction: row;
     gap: 20px;
 }
-.date{
-        font-style: italic;
-        font-size: 0.5rem;
-        color: #ffffff;
-        margin-top: 5px;
+
+.main ul {
+    list-style-type: square;
 }
+
+.main section {
+    margin: 10px 20px;
+}
+
+main {
+    flex: 1;
+}
+
+.item-cv {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-left: 4px solid transparent;
+}
+
+.item-cv h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.item-cv:hover{
+    background-color: #e3e3e3;
+    border-left: 4px solid #17abb3;
+    padding: 10px;
+}
+.sub-info {
+    display: block;
+    font-style: italic;
+    font-size: 12px;
+    color: #333333;
+}
+
+.date-exp {
+    color: hsl(184.11deg 65.18% 43.92%);
+    font-size: 13px;
+    white-space: nowrap;
+}
+/* 
+    FIN MAIN
+    */
+
+
+/* 
+    DÉBUT FOOTER
+    */
+footer {
+    background-color: hsl(183.08deg 77.23% 39.61%);
+    display: block;
+    justify-items: center;
+    height: 70px;
+    align-content: center;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+.icons i:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.date {
+    font-style: italic;
+    font-size: 0.5rem;
+    color: #ffffff;
+    margin-top: 5px;
+}
+/* 
+    FIN FOOTER
+    */
